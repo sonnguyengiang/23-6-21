@@ -1,4 +1,4 @@
-package com.company;
+package javacollction;
 import java.util.HashMap;
 import java.util.*;
 public class TestMap {
