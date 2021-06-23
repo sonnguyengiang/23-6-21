@@ -8,13 +8,13 @@ public class Main {
         Manager manager = new Manager();
         while (true) {
             System.out.println("------Menu------");
-            System.out.println("1.Add new");
-            System.out.println("2.total");
-            System.out.println("3.remove by day");
-            System.out.println("4.bill by day");
-            System.out.println("5.show");
-            System.out.println("6.FindBS by id");
-            System.out.println("7.sort");
+            System.out.println("1.Thêm mới danh sách");
+            System.out.println("2.Tổng hóa đơn");
+            System.out.println("3.Xóa hóa đơn theo ngày");
+            System.out.println("4.Thành tiền");
+            System.out.println("5.Hiện thị");
+            System.out.println("6.Tìm kiếm");
+            System.out.println("7.Sắp xếp");
             System.out.println("8.exit");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
