@@ -160,16 +160,17 @@ public class Manger {
     }
 
     public void showMoney() {
-        System.out.print("Enter a name that you want show: ");
+        System.out.print("Enter a id that you want show: ");
         String name = scanner.nextLine();
         for (Preson preson : list) {
             if (preson instanceof KHNN) {
-                if (((KHNN) preson).getName().equals(name)) {
+                if (((KHNN) preson).getId().equals(name)) {
                     System.out.println(((KHNN) preson).tinhtien());
+
                 }
             }
             if (preson instanceof KHVN) {
-                if (((KHVN) preson).getName().equals(name)) {
+                if (((KHVN) preson).getId().equals(name)) {
                     System.out.println(((KHVN) preson).tinhtien());
                 }
             }
