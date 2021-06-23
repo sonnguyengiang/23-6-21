@@ -139,7 +139,7 @@ public class Manager {
         list.add(new HomeNormal(id, day, unitPrice, type, acreage, address));
     }
 
-    public int totalDirt() {
+    public void totalDirt() {
         int sum = 0;
         for (FormType s : list) {
             if (s instanceof TypeA) {
@@ -149,10 +149,10 @@ public class Manager {
                 sum++;
             }
         }
-        return sum;
+        System.out.println(sum);
     }
 
-    public int totalHome() {
+    public void totalHome() {
         int sum = 0;
         for (FormType s : list) {
             if (s instanceof HomeBrandStuff) {
@@ -162,7 +162,7 @@ public class Manager {
                 sum++;
             }
         }
-        return sum;
+        System.out.println(sum);
     }
 
     public void addTotalList(){
