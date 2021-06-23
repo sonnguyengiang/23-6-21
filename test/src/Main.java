@@ -12,7 +12,8 @@ public class Main {
             System.out.println("4.find by name");
             System.out.println("5.show");
             System.out.println("6.sort");
-            System.out.println("7.exit");
+            System.out.println("7.show money");
+            System.out.println("8.exit");
             int choice = sc.nextInt();
             switch (choice){
                 case 1:
@@ -34,7 +35,11 @@ public class Main {
                     manger.sort();
                     break;
                 case 7:
+                    manger.showMoney();
+                    break;
+                case 8:
                     System.exit(0);
+                    break;
             }
         }
     }

@@ -158,6 +158,23 @@ public class Manger {
         sortname s = new sortname();
         Collections.sort(list, s);
     }
+
+    public void showMoney() {
+        System.out.print("Enter a name that you want show: ");
+        String name = scanner.nextLine();
+        for (Preson preson : list) {
+            if (preson instanceof KHNN) {
+                if (((KHNN) preson).getName().equals(name)) {
+                    System.out.println(((KHNN) preson).tinhtien());
+                }
+            }
+            if (preson instanceof KHVN) {
+                if (((KHVN) preson).getName().equals(name)) {
+                    System.out.println(((KHVN) preson).tinhtien());
+                }
+            }
+        }
+    }
 }
 
 
